@@ -68,29 +68,30 @@ public class controller {
         rotate.setDuration(Duration.seconds(1));
         rotate.setCycleCount(1);
         rotate.setByAngle(360);
+        rotate.setAxis(Rotate.Z_AXIS);
         rotate.play();
     }
 
     public void rotateY (ActionEvent e){
         //System.out.println("spin");
-        RotateTransition spin = new RotateTransition();
-        spin.setNode(square);
-        spin.setDuration(Duration.seconds(1));
-        spin.setCycleCount(1);
-        spin.setByAngle(360);
-        spin.setAxis(Rotate.Y_AXIS);
-        spin.play();
+        RotateTransition spinY = new RotateTransition();
+        spinY.setNode(square);
+        spinY.setDuration(Duration.seconds(1));
+        spinY.setCycleCount(1);
+        spinY.setByAngle(360);
+        spinY.setAxis(Rotate.Y_AXIS);
+        spinY.play();
     }
 
     public void rotateX (ActionEvent e){
         //System.out.println("spin");
-        RotateTransition spin = new RotateTransition();
-        spin.setNode(square);
-        spin.setDuration(Duration.seconds(1));
-        spin.setCycleCount(1);
-        spin.setByAngle(360);
-        spin.setAxis(Rotate.X_AXIS);
-        spin.play();
+        RotateTransition spinX = new RotateTransition();
+        spinX.setNode(square);
+        spinX.setDuration(Duration.seconds(1));
+        spinX.setCycleCount(1);
+        spinX.setByAngle(360);
+        spinX.setAxis(Rotate.X_AXIS);
+        spinX.play();
     }
 
     public void changeColor(ActionEvent e) {
@@ -104,3 +105,4 @@ public class controller {
 //    }
 
 }
+
